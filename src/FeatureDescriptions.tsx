@@ -22,14 +22,14 @@ export function FeatureDescriptions() {
         text="Seamlessly pay for you favorite subscriptions with Beaver Wallet and send periodic payments to your family & friends."
       />
       <ContentBlock
-        imageName="transparent-wallet"
+        imageName="lock-image"
         imagePosition="right"
-        text="Beaver is fully transparent. It is built on the industry standard for transparent and secure wallets called ERC-4337. Beaver's source code is fully open source."
+        text="Beaver is fully self-custodial. This means that nobody (including us!) except yourself has control over your funds."
       />
       <ContentBlock
-        imageName="lock-image"
+        imageName="transparent-wallet"
         imagePosition="left"
-        text="Beaver is fully self-custodial. This means that nobody, including us, has access to or control over your funds."
+        text="Beaver is fully transparent. It is built on the industry standard for transparent and secure wallets called ERC-4337. Beaver's source code is fully open source."
       />
     </div>
   );

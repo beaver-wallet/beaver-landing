@@ -16,10 +16,6 @@ export function Highlights() {
       }}
     >
       <FeatureHighlight
-        icon={<LockIcon />}
-        text="It's secure. Your funds are in full self custody."
-      />
-      <FeatureHighlight
         icon={<MoodHappyIcon />}
         text="No seed phrases. Log in with Google or other social account."
       />
@@ -30,6 +26,10 @@ export function Highlights() {
       <FeatureHighlight
         icon={<LoopIcon />}
         text="Use Beaver to pay for your subscriptions and send money periodically."
+      />
+      <FeatureHighlight
+        icon={<LockIcon />}
+        text="It's secure. Your funds are in your full self custody."
       />
     </div>
   );

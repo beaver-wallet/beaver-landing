@@ -8,7 +8,8 @@ export function JoinWaitlist() {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        marginBottom: 40,
+        marginTop: 80,
+        marginBottom: 60,
       }}
     >
       <WaitlistForm />

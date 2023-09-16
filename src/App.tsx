@@ -29,17 +29,6 @@ function App() {
         }}
       >
         <a
-          href="https://github.com/beaver-wallet"
-          style={{
-            display: "block",
-            fontSize: 20,
-            marginBottom: 10,
-            color: "#acacac",
-          }}
-        >
-          Github
-        </a>
-        <a
           href="https://twitter.com/walletbeaver"
           style={{
             display: "block",
@@ -56,14 +45,27 @@ function App() {
             display: "block",
             fontSize: 20,
             color: "#acacac",
+            marginBottom: 10,
           }}
         >
           Discord
+        </a>
+        <a
+          href="https://github.com/beaver-wallet"
+          style={{
+            display: "block",
+            fontSize: 20,
+            marginBottom: 10,
+            color: "#acacac",
+          }}
+        >
+          Github
         </a>
         <p
           style={{
             fontSize: 20,
             color: "#acacac",
+            margin: 0,
           }}
         >
           contact@ethbeaver.xyz
