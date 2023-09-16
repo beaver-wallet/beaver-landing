@@ -1,24 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ContentBlock } from "./ContentBlock";
+import { FeatureDescriptions } from "./FeatureDescriptions";
+import { Highlights } from "./Highlights";
+import { JoinWaitlist } from "./JoinWaitlist";
+import { TopWaitlist } from "./TopWaitlist";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1 style={{ textAlign: "center" }}>
+          Beaver Wallet
+        </h1>
       </header>
+      <div>
+        <TopWaitlist />
+        <h1>
+          You should choose Beaver Wallet because:
+        </h1>
+        <Highlights />
+      </div>
+      <FeatureDescriptions />
+      <JoinWaitlist />
+      <footer
+        style={{
+          height: 250,
+          textAlign: "right",
+          paddingTop: 32,
+        }}
+      >
+        <a
+          href="https://github.com/beaver-wallet"
+          style={{
+            display: "block",
+            fontSize: 20,
+            marginBottom: 10,
+            color: "#acacac",
+          }}
+        >
+          Github
+        </a>
+        <a
+          href="https://twitter.com/walletbeaver"
+          style={{
+            display: "block",
+            fontSize: 20,
+            color: "#acacac",
+          }}
+        >
+          Twitter
+        </a>
+        <p
+          style={{
+            fontSize: 20,
+            color: "#acacac",
+          }}
+        >
+          contact@ethbeaver.xyz
+        </p>
+      </footer>
     </div>
   );
 }
