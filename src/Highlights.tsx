@@ -29,7 +29,7 @@ export function Highlights() {
       />
       <FeatureHighlight
         icon={<LoopIcon />}
-        text="Use subscriptions and send money periodically."
+        text="Use Beaver to pay for your subscriptions and send money periodically."
       />
     </div>
   );

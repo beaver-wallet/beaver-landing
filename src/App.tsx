@@ -1,8 +1,7 @@
-import { ContentBlock } from "./ContentBlock";
 import { FeatureDescriptions } from "./FeatureDescriptions";
 import { Highlights } from "./Highlights";
 import { JoinWaitlist } from "./JoinWaitlist";
-import { TopWaitlist } from "./TopWaitlist";
+import { TopPanel } from "./TopPanel";
 import "./index.css";
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
         </h1>
       </header>
       <div>
-        <TopWaitlist />
+        <TopPanel />
         <h1>
           You should choose Beaver Wallet because:
         </h1>
@@ -46,9 +45,20 @@ function App() {
             display: "block",
             fontSize: 20,
             color: "#acacac",
+            marginBottom: 10,
           }}
         >
           Twitter
+        </a>
+        <a
+          href="https://discord.gg/WCKcRkXdSW"
+          style={{
+            display: "block",
+            fontSize: 20,
+            color: "#acacac",
+          }}
+        >
+          Discord
         </a>
         <p
           style={{
