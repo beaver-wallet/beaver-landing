@@ -4,7 +4,7 @@ import {
   useState,
 } from "react";
 
-const DefaultValue = true;
+const DefaultValue = false;
 
 export const OnMobileContext =
   createContext(DefaultValue);
@@ -25,6 +25,7 @@ export default function ResponsiveSection({
       setWidth(window.innerWidth);
     };
 
+    handleWindowResize();
     window.addEventListener(
       "resize",
       handleWindowResize
