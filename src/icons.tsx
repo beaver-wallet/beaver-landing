@@ -1,10 +1,12 @@
 import { PrimaryColor } from "./constants";
 
-export const LockIcon = () => (
+export const LockIcon = (props: {
+  size: number;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width={props.size}
+    height={props.size}
     viewBox="0 -960 960 960"
     fill={PrimaryColor}
   >
@@ -12,11 +14,13 @@ export const LockIcon = () => (
   </svg>
 );
 
-export const MoodHappyIcon = () => (
+export const MoodHappyIcon = (props: {
+  size: number;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width={props.size}
+    height={props.size}
     viewBox="0 -960 960 960"
     fill={PrimaryColor}
   >
@@ -24,11 +28,13 @@ export const MoodHappyIcon = () => (
   </svg>
 );
 
-export const GasStationIcon = () => (
+export const GasStationIcon = (props: {
+  size: number;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width={props.size}
+    height={props.size}
     viewBox="0 -960 960 960"
     fill={PrimaryColor}
   >
@@ -36,11 +42,13 @@ export const GasStationIcon = () => (
   </svg>
 );
 
-export const LoopIcon = () => (
+export const LoopIcon = (props: {
+  size: number;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width={props.size}
+    height={props.size}
     viewBox="0 -960 960 960"
     fill={PrimaryColor}
   >

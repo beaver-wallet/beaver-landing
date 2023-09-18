@@ -1,13 +1,18 @@
+import { useContext } from "react";
+import { OnMobileContext } from "./Responsive";
+
 export function ContentBlock(props: {
   imageName: string;
   text: string;
   imagePosition: "left" | "right";
 }) {
+  const onMobile = useContext(OnMobileContext);
+
   const imgBlock = (
     <img
       alt="Block"
       src={`/${props.imageName}.png`}
-      width={300}
+      width={onMobile ? 200 : 300}
       style={{
         display: "inline",
       }}
@@ -18,14 +23,27 @@ export function ContentBlock(props: {
     <p
       style={{
         padding: 20,
-        fontSize: 20,
+        fontSize: onMobile ? 16 : 20,
       }}
     >
       {props.text}
     </p>
   );
 
-  return (
+  const mobileLayout = (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      {imgBlock}
+      {textBlock}
+    </div>
+  );
+
+  const desktopLayout = (
     <div
       style={{
         display: "flex",
@@ -37,4 +55,6 @@ export function ContentBlock(props: {
         : [textBlock, imgBlock]}
     </div>
   );
+
+  return onMobile ? mobileLayout : desktopLayout;
 }

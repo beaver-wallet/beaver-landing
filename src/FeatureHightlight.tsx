@@ -1,15 +1,18 @@
+import { OnMobileContext } from "./Responsive";
 import { PrimaryColor } from "./constants";
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
 
 export function FeatureHighlight(props: {
-  icon: ReactNode;
+  icon: any;
   text: string;
 }) {
+  const onMobile = useContext(OnMobileContext);
+
   return (
     <div
       style={{
         borderColor: PrimaryColor,
-        borderWidth: 4,
+        borderWidth: onMobile ? 2 : 4,
         borderStyle: "solid",
         borderRadius: 10,
         padding: 10,
@@ -25,9 +28,11 @@ export function FeatureHighlight(props: {
           marginTop: 10,
         }}
       >
-        {props.icon}
+        {<props.icon size={onMobile ? 32 : 48} />}
       </div>
-      <p style={{ fontSize: 20 }}>{props.text}</p>
+      <p style={{ fontSize: onMobile ? 16 : 20 }}>
+        {props.text}
+      </p>
     </div>
   );
 }

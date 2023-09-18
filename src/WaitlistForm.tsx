@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { PrimaryColor } from "./constants";
+import { OnMobileContext } from "./Responsive";
 
 export function WaitlistForm() {
+  const onMobile = useContext(OnMobileContext);
   const [buttonHovered, setButtonHovered] =
     useState(false);
   const [email, setEmail] = useState("");
@@ -61,16 +63,16 @@ export function WaitlistForm() {
     <div
       style={{
         backgroundColor: "white",
-        height: 50,
         borderRadius: 100,
+        width: "fit-content",
       }}
     >
       <input
         type="text"
         placeholder="Email"
         style={{
-          width: 200,
-          height: 30,
+          width: onMobile ? 150 : 200,
+          height: onMobile ? 20 : 30,
           borderWidth: 0,
           borderTopLeftRadius: 100,
           borderBottomLeftRadius: 100,
@@ -83,7 +85,7 @@ export function WaitlistForm() {
       <button
         style={{
           width: 80,
-          height: 50,
+          height: onMobile ? 30 : 50,
           backgroundColor: PrimaryColor,
           borderWidth: 0,
           borderTopRightRadius: 100,

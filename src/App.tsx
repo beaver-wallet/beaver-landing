@@ -1,12 +1,22 @@
+import { useContext } from "react";
 import { FeatureDescriptions } from "./FeatureDescriptions";
 import { Highlights } from "./Highlights";
 import { JoinWaitlist } from "./JoinWaitlist";
 import { TopPanel } from "./TopPanel";
 import "./index.css";
+import { OnMobileContext } from "./Responsive";
+import { Footer } from "./Footer";
 
 function App() {
+  const onMobile = useContext(OnMobileContext);
+
   return (
-    <div>
+    <div
+      style={{
+        paddingLeft: onMobile ? 4 : 200,
+        paddingRight: onMobile ? 4 : 200,
+      }}
+    >
       <header>
         <h1 style={{ textAlign: "center" }}>
           Beaver Wallet
@@ -14,63 +24,20 @@ function App() {
       </header>
       <div>
         <TopPanel />
-        <h1>
+        <p
+          style={{
+            fontWeight: "bolder",
+            fontSize: onMobile ? 16 : 32,
+            marginLeft: 32,
+          }}
+        >
           You should choose Beaver Wallet because:
-        </h1>
+        </p>
         <Highlights />
       </div>
       <FeatureDescriptions />
       <JoinWaitlist />
-      <footer
-        style={{
-          height: 250,
-          textAlign: "right",
-          paddingTop: 32,
-        }}
-      >
-        <a
-          href="https://twitter.com/walletbeaver"
-          style={{
-            display: "block",
-            fontSize: 20,
-            color: "#acacac",
-            marginBottom: 10,
-          }}
-        >
-          Twitter
-        </a>
-        <a
-          href="https://discord.gg/WCKcRkXdSW"
-          style={{
-            display: "block",
-            fontSize: 20,
-            color: "#acacac",
-            marginBottom: 10,
-          }}
-        >
-          Discord
-        </a>
-        <a
-          href="https://github.com/beaver-wallet"
-          style={{
-            display: "block",
-            fontSize: 20,
-            marginBottom: 10,
-            color: "#acacac",
-          }}
-        >
-          Github
-        </a>
-        <p
-          style={{
-            fontSize: 20,
-            color: "#acacac",
-            margin: 0,
-          }}
-        >
-          contact@ethbeaver.xyz
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
