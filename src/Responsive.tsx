@@ -25,7 +25,6 @@ export default function ResponsiveSection({
       setWidth(window.innerWidth);
     };
 
-    handleWindowResize();
     window.addEventListener(
       "resize",
       handleWindowResize
