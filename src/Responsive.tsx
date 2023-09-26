@@ -29,6 +29,7 @@ export default function ResponsiveSection({
       "resize",
       handleWindowResize
     );
+
     return () =>
       window.removeEventListener(
         "resize",
