@@ -14,7 +14,7 @@ export function Highlights() {
   const highlight1 = (
     <FeatureHighlight
       icon={LoopIcon}
-      text="Users are charged consitently and seamlessly. And the fees are cheap."
+      text="Users are charged consitently and seamlessly. And the fees are low."
     />
   );
   const highlight2 = (
