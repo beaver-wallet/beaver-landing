@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { WaitlistForm } from "./WaitlistForm";
 import { OnMobileContext } from "./Responsive";
 
-export function JoinWaitlist() {
+export function JoinNewspaper() {
   const onMobile = useContext(OnMobileContext);
 
   const mobileLayout = (
@@ -23,11 +23,11 @@ export function JoinWaitlist() {
         }}
       >
         <h1 style={{ margin: 0 }}>
-          Join the waitlist!
+          Subscribe to our news!
         </h1>
         <p style={{ fontSize: 16 }}>
-          We invite people from the waitlist to
-          try out the wallet every week!
+          Subscribe to stay up-to-date with
+          Beaver's latest news!
         </p>
       </div>
       <WaitlistForm />
@@ -46,12 +46,12 @@ export function JoinWaitlist() {
     >
       <WaitlistForm />
       <div>
-        <h1>Join the waitlist!</h1>
+        <h1>Subscribe to our news!</h1>
         <p
           style={{ fontSize: 20, maxWidth: 200 }}
         >
-          We invite people from the waitlist to
-          try out the wallet every week!
+          Subscribe to stay up-to-date with
+          Beaver's latest news!
         </p>
       </div>
     </div>

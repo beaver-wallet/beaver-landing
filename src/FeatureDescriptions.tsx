@@ -4,32 +4,38 @@ export function FeatureDescriptions() {
   return (
     <div>
       <ContentBlock
-        imageName="seed-phrase-crossed"
+        imageName="usd-repeat"
         imagePosition="left"
-        text="No more seed phrases! Beaver Wallet allows
-        you to log in with a social account like
-        google while keeping funds at your
-        full self custody!"
+        text="Subscription fees are low with Beaver. However they vary from blockchain to blockchain. On modern blockchains (Base, Arbitrum, Polygon, etc.) the fee per payment will likely be less than 0.5%!"
       />
       <ContentBlock
         imageName="gas-station-with-tokens"
         imagePosition="right"
-        text="With Beaver Wallet you don't need ETH to pay the blockchain fee (also known as gas fee). You can use any token like USDT or USDC."
+        text="Beaver is easy to set up. No blockchain transaction is needed to start using Beaver. You just create a crypto wallet, share it with Beaver and start receiving payments from subscriptions!"
       />
       <ContentBlock
-        imageName="usd-repeat"
+        imageName="mood-happy"
         imagePosition="left"
-        text="Seamlessly pay for you favorite subscriptions with Beaver Wallet and send periodic payments to your family & friends."
+        text={
+          <p>
+            We streamlined the checkout process
+            for your users down to just a couple
+            of clicks! It's simple and easy to
+            use.{" "}
+            <a
+              href="https://gateway.paybeaver.xyz/subscribe/31rhCK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check it out by yourself!
+            </a>
+          </p>
+        }
       />
       <ContentBlock
         imageName="lock-image"
         imagePosition="right"
-        text="Beaver is fully self-custodial. This means that nobody (including us!) except yourself has control over your funds."
-      />
-      <ContentBlock
-        imageName="transparent-wallet"
-        imagePosition="left"
-        text="Beaver is fully transparent. It is built on the industry standard for transparent and secure wallets called ERC-4337. Beaver's source code is fully open source."
+        text="Beaver is fully self-custodial. Even though we do provide a hosted API, this API is needed only for convenience. Funds and key data is stored solely on the blockchain and a decentralized file storage IPFS. Users' payments are sent directly to your crypto wallet, we never control these funds and are not able to freeze them."
       />
     </div>
   );

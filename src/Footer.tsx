@@ -10,10 +10,11 @@ export function Footer() {
         height: 250,
         textAlign: "right",
         paddingTop: 32,
+        marginTop: 64,
       }}
     >
       <a
-        href="https://twitter.com/beaver_wallet"
+        href="https://twitter.com/paybeaver"
         style={{
           display: "block",
           fontSize: onMobile ? 16 : 20,
@@ -35,7 +36,7 @@ export function Footer() {
         Discord
       </a>
       <a
-        href="https://github.com/beaver-wallet"
+        href="https://github.com/pay-beaver"
         style={{
           display: "block",
           fontSize: onMobile ? 16 : 20,
@@ -52,7 +53,7 @@ export function Footer() {
           margin: 0,
         }}
       >
-        contact@ethbeaver.xyz
+        contact@paybeaver.xyz
       </p>
     </footer>
   );

@@ -13,36 +13,40 @@ export function Highlights() {
 
   const highlight1 = (
     <FeatureHighlight
-      icon={MoodHappyIcon}
-      text="There is no seed phrases. Log in with Google or other social account."
+      icon={LoopIcon}
+      text="Users are charged consitently and seamlessly. And the fees are cheap."
     />
   );
-
   const highlight2 = (
     <FeatureHighlight
       icon={GasStationIcon}
-      text="You can pay blockchain fee in any token such as USDT."
+      text="Easy to set up. No blockchain transactions are needed."
     />
   );
 
   const highlight3 = (
     <FeatureHighlight
-      icon={LoopIcon}
-      text="Use Beaver to pay for your subscriptions and send money periodically."
+      icon={MoodHappyIcon}
+      text="Simple checkout form that makes the process easy for your users."
     />
   );
 
   const highlight4 = (
     <FeatureHighlight
       icon={LockIcon}
-      text="It's secure. Your funds are in your full self custody."
+      text="It's secure. Earned money are in your full self custody."
     />
   );
 
   let highlights;
   if (onMobile) {
     highlights = (
-      <div style={{ marginBottom: 40 }}>
+      <div
+        style={{
+          marginBottom: 40,
+          marginTop: 40,
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -71,6 +75,7 @@ export function Highlights() {
           display: "flex",
           justifyContent: "space-between",
           marginBottom: 40,
+          marginTop: 40,
         }}
       >
         {highlight1}

@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { ReactNode, useContext } from "react";
 import { OnMobileContext } from "./Responsive";
 
 export function ContentBlock(props: {
   imageName: string;
-  text: string;
+  text: ReactNode;
   imagePosition: "left" | "right";
 }) {
   const onMobile = useContext(OnMobileContext);
@@ -20,14 +20,14 @@ export function ContentBlock(props: {
   );
 
   const textBlock = (
-    <p
+    <div
       style={{
         padding: 20,
         fontSize: onMobile ? 16 : 20,
       }}
     >
       {props.text}
-    </p>
+    </div>
   );
 
   const mobileLayout = (

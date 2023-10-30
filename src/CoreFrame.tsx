@@ -12,14 +12,13 @@ export function CoreFrame({ children }: any) {
           textAlign: "center",
         }}
       >
-        Beaver Wallet
+        Beaver Crypto Subscriptions
       </h1>
       <div>
         <a
           href="/"
           style={{
             display: "block",
-            color: "white",
             fontSize: 18,
             textAlign: "right",
           }}
@@ -30,7 +29,6 @@ export function CoreFrame({ children }: any) {
           href="/roadmap"
           style={{
             display: "block",
-            color: "white",
             fontSize: 18,
             textAlign: "right",
             marginTop: 12,
@@ -56,13 +54,12 @@ export function CoreFrame({ children }: any) {
           textAlign: "center",
         }}
       >
-        Beaver Wallet
+        Beaver Crypto Subscriptions
       </h1>
       <div>
         <a
           href="/"
           style={{
-            color: "white",
             fontSize: 18,
           }}
         >
@@ -71,7 +68,6 @@ export function CoreFrame({ children }: any) {
         <a
           href="/roadmap"
           style={{
-            color: "white",
             fontSize: 18,
             marginLeft: 48,
           }}
