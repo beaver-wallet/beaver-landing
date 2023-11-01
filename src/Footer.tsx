@@ -51,9 +51,19 @@ export function Footer() {
           fontSize: onMobile ? 16 : 20,
           color: "#acacac",
           margin: 0,
+          marginBottom: 4,
         }}
       >
         contact@paybeaver.xyz
+      </p>
+      <p
+        style={{
+          fontSize: onMobile ? 16 : 20,
+          color: "#acacac",
+          margin: 0,
+        }}
+      >
+        alexey@nebols.in
       </p>
     </footer>
   );

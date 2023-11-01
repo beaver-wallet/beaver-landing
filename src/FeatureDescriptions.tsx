@@ -6,7 +6,7 @@ export function FeatureDescriptions() {
       <ContentBlock
         imageName="usd-repeat"
         imagePosition="left"
-        text="Subscription fees are low with Beaver. However they vary from blockchain to blockchain. On modern blockchains (Base, Arbitrum, Polygon, etc.) the fee per payment will likely be less than 0.5%!"
+        text="Subscription fees are low with Beaver. For every payment you are charged 1% + blockchain fee (on modern blockchains it's less than $0.15). That's it. No hidden fees."
       />
       <ContentBlock
         imageName="gas-station-with-tokens"
@@ -18,7 +18,7 @@ export function FeatureDescriptions() {
         imagePosition="left"
         text={
           <p>
-            We streamlined the checkout process
+            The checkout process is streamlined
             for your users down to just a couple
             of clicks! It's simple and easy to
             use.{" "}
@@ -35,7 +35,7 @@ export function FeatureDescriptions() {
       <ContentBlock
         imageName="lock-image"
         imagePosition="right"
-        text="Beaver is fully self-custodial. Even though we do provide a hosted API, this API is needed only for convenience. Funds and key data is stored solely on the blockchain and a decentralized file storage IPFS. Users' payments are sent directly to your crypto wallet, we never control these funds and are not able to freeze them."
+        text="Beaver is fully self-custodial. Even though there is a hosted API, this API is needed only for convenience. Funds and key data is stored solely on the blockchain and a decentralized file storage IPFS. Users' payments are sent directly to your crypto wallet, we never control these funds and are not able to freeze them."
       />
     </div>
   );

@@ -14,7 +14,7 @@ export function Highlights() {
   const highlight1 = (
     <FeatureHighlight
       icon={LoopIcon}
-      text="Users are charged consitently and seamlessly. And the fees are low."
+      text="Your users are charged reliably and securely, with low fees."
     />
   );
   const highlight2 = (
@@ -44,7 +44,7 @@ export function Highlights() {
       <div
         style={{
           marginBottom: 40,
-          marginTop: 40,
+          marginTop: 16,
         }}
       >
         <div
@@ -75,7 +75,7 @@ export function Highlights() {
           display: "flex",
           justifyContent: "space-between",
           marginBottom: 40,
-          marginTop: 40,
+          marginTop: 16,
         }}
       >
         {highlight1}

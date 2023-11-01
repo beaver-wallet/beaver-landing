@@ -5,8 +5,29 @@ import { Footer } from "./Footer";
 export function CoreFrame({ children }: any) {
   const onMobile = useContext(OnMobileContext);
 
+  const betaWarning = (
+    <div
+      style={{
+        backgroundColor: "#FF0000",
+        color: "white",
+        padding: 8,
+        fontSize: 20,
+      }}
+    >
+      Beaver is currently in Beta. You can help to
+      get it to production. Info:{" "}
+      <a
+        href="https://docs.paybeaver.xyz/untitled/funding-request"
+        style={{ color: "white" }}
+      >
+        here.
+      </a>
+    </div>
+  );
+
   const mobileHeader = (
     <div>
+      {betaWarning}
       <h1
         style={{
           textAlign: "center",
@@ -14,68 +35,48 @@ export function CoreFrame({ children }: any) {
       >
         Beaver Crypto Subscriptions
       </h1>
-      <div>
-        <a
-          href="/"
-          style={{
-            display: "block",
-            fontSize: 18,
-            textAlign: "right",
-          }}
-        >
-          Home
-        </a>
-        <a
-          href="/roadmap"
-          style={{
-            display: "block",
-            fontSize: 18,
-            textAlign: "right",
-            marginTop: 12,
-          }}
-        >
-          Roadmap
-        </a>
-      </div>
+      <a
+        href="https://docs.paybeaver.xyz/"
+        style={{
+          display: "block",
+          fontSize: 18,
+          textAlign: "right",
+        }}
+      >
+        Documentation
+      </a>
     </div>
   );
 
   const desktopHeader = (
-    <header
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <div />
-      <h1
+    <div>
+      {betaWarning}
+      <header
         style={{
-          textAlign: "center",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        Beaver Crypto Subscriptions
-      </h1>
-      <div>
-        <a
-          href="/"
+        <div />
+        <h1
           style={{
-            fontSize: 18,
+            textAlign: "center",
           }}
         >
-          Home
-        </a>
+          Beaver Crypto Subscriptions
+        </h1>
         <a
-          href="/roadmap"
+          href="https://docs.paybeaver.xyz/"
           style={{
             fontSize: 18,
             marginLeft: 48,
           }}
         >
-          Roadmap
+          Documentation
         </a>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 
   return (
