@@ -5,29 +5,8 @@ import { Footer } from "./Footer";
 export function CoreFrame({ children }: any) {
   const onMobile = useContext(OnMobileContext);
 
-  const betaWarning = (
-    <div
-      style={{
-        backgroundColor: "#FF0000",
-        color: "white",
-        padding: 8,
-        fontSize: 20,
-      }}
-    >
-      Beaver is currently in Beta. You can help to
-      get it to production. Info:{" "}
-      <a
-        href="https://docs.paybeaver.xyz/untitled/funding-request"
-        style={{ color: "white" }}
-      >
-        here.
-      </a>
-    </div>
-  );
-
   const mobileHeader = (
     <div>
-      {betaWarning}
       <h1
         style={{
           textAlign: "center",
@@ -50,7 +29,6 @@ export function CoreFrame({ children }: any) {
 
   const desktopHeader = (
     <div>
-      {betaWarning}
       <header
         style={{
           display: "flex",
